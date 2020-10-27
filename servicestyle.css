@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+}
+
+.services-section{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('./IMG/nyc-real-estate-connected-real-estate.png');
+    background-size: cover;
+    height:100vh;
+    background-repeat:no-repeat;
+    position:relative;
+    background-position:center center;
+}
+
+.inner-width{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+}
+.section-title{
+    padding-top:170px;
+    padding-bottom:100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    color: #ddd
+}
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-box{
+    max-width: 25%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.service-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #D499B9;
+    color: #D499B9;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+.service-icon i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+}
+.service-box:hover .service-icon{
+    background: #D499B9;
+    color: #ddd;
+}
+.service-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.service-desc{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:960px) {
+    .service-box{
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .service-box{
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .service-box{
+        max-width: 100%;
+    }
+}
+.wrapper{
+    width:auto;
+    margin:auto;
+    padding-right:50px;
+}
+.nav-area{
+    float: right;
+    margin-top:30px;
+}
+.nav-area li{
+    display:inline-block;
+}
+.nav-area li a{
+    color:#fff;
+    text-decoration:none;
+    padding: 5px 20px;
+    font-size:20px;
+    font-weight:bold;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.nav-area li a:hover{
+    background:#fff;
+    color:#333;
+}
