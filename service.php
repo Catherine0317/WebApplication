@@ -9,16 +9,9 @@
 </head>
 <body>
 <div class="services-section">
-    <div class = "wrapper">
-        <ul class = "nav-area">
-            <li><a href = "http://localhost:63342/group/Group%20Project%20YH1762.html?_ijt=9pq89pki0r0j6859pcekvc0pfo" >Home</a></li>
-            <li><a href = "http://localhost:63342/group/About.html?_ijt=9pq89pki0r0j6859pcekvc0pfo" >About</a></li>
-            <li><a href = "http://localhost:63342/group/Service.html?_ijt=ekd70k8ja5s8o956qf6bjsbmup" >Service</a></li>
-            <li><a href = "#" >Portfolio</a></li>
-            <li><a href = "#" >Team</a></li>
-            <li><a href = "#" >Log in/Sign up</a></li>
-        </ul>
-    </div>
+    <?php
+        include "header.php";
+    ?>
     <div class="inner-width">
         <h1 class="section-title">Our Services</h1>
         <div class="services-container">
