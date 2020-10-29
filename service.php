@@ -3,22 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="./css/servicestyle.css">
+    <link rel="stylesheet" href="static/css/servicestyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
 <body>
 <div class="services-section">
-    <div class = "wrapper">
-        <ul class = "nav-area">
-            <li><a href = "http://localhost:63342/group/Group%20Project%20YH1762.html?_ijt=9pq89pki0r0j6859pcekvc0pfo" >Home</a></li>
-            <li><a href = "http://localhost:63342/group/About.html?_ijt=9pq89pki0r0j6859pcekvc0pfo" >About</a></li>
-            <li><a href = "http://localhost:63342/group/Service.html?_ijt=ekd70k8ja5s8o956qf6bjsbmup" >Service</a></li>
-            <li><a href = "#" >Portfolio</a></li>
-            <li><a href = "#" >Team</a></li>
-            <li><a href = "#" >Log in/Sign up</a></li>
-        </ul>
-    </div>
+    <?php
+        include "header.php";
+    ?>
     <div class="inner-width">
         <h1 class="section-title">Our Services</h1>
         <div class="services-container">
