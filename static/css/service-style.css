@@ -6,7 +6,7 @@
 }
 
 .services-section{
-    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('./IMG/nyc-real-estate-connected-real-estate.png');
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('../images/nycrealestate.jpg');
     background-size: cover;
     height:100vh;
     background-repeat:no-repeat;
@@ -47,8 +47,8 @@
     display: inline-block;
     width: 70px;
     height: 70px;
-    border: 3px solid #D499B9;
-    color: #D499B9;
+    border: 3px solid mediumpurple;
+    color: mediumpurple;
     transform: rotate(45deg);
     margin-bottom: 30px;
     margin-top: 16px;
@@ -60,7 +60,7 @@
     font-size: 26px;
 }
 .service-box:hover .service-icon{
-    background: #D499B9;
+    background: mediumpurple;
     color: #ddd;
 }
 .service-title{

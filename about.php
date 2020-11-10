@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
-    <link rel="stylesheet" href = "static/css/about.css">
+    <link rel="stylesheet" href = "./static/css/about.css">
 </head>
 
 <body>
 <header>
     <?php
-        include "header.php";
+    include "header.php";
     ?>
-
     <div class = "welcome-text">
         <h1> New York Property Sales Information System</h1>
     </div>

@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="static/css/servicestyle.css">
+    <link rel="stylesheet" href="static/css/service-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
 <body>
 <div class="services-section">
     <?php
-        include "header.php";
+    include "header.php";
     ?>
     <div class="inner-width">
         <h1 class="section-title">Our Services</h1>
