@@ -1,25 +1,32 @@
 <?php
+
 include("config1.php");
+$errors = array();
+$username = "";
+$password = "";
 
+if (isset($_POST['login_user'])) {
 
-if(isset($_POST['login_user']))
-{
-    $username = mysqli_real_escape_string($db,$_POST['username']);
-    $password = mysqli_real_escape_string($db,$_POST['password']);
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-    $sql = "SELECT * FROM test WHERE username = '$username' and password = '$password'";
-    $result = mysqli_query($db,$sql);
-    $active = $row['active'];
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
+    if (empty($username)) {
+        array_push($errors, "Username is required");
+    }
+    if (empty($password)) {
+        array_push($errors, "Password is required");
+    }
 
-    if($count == 1) {
-        session_register("username");
-        $_SESSION['login_user'] = $username;
-
-        header("location: index.php");
-    }else {
-        $error = "Your Login Name or Password is invalid";
+    if (count($errors) == 0) {
+        $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+        $results = mysqli_query($link, $sql);
+        if (mysqli_num_rows($results) == 1) {
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = "You are now logged in";
+            header('location: index.php');
+        } else {
+            array_push($errors, "The password or username you entered was not valid.");
+        }
     }
 }
 ?>
@@ -27,15 +34,16 @@ if(isset($_POST['login_user']))
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login System</title>
-    <link rel="stylesheet" type="text/css" href="static/css/login-style.css">
+    <title>Registration system PHP and MySQL</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/login-style.css">
 </head>
 <body>
-
 <div class="header">
     <h2>Login</h2>
 </div>
-<form method="post" action="login_page.php">
+
+<form method="post" action="login.php">
+    <?php include('errors.php'); ?>
     <div class="input-group">
         <label>Username</label>
         <input type="text" name="username" >
