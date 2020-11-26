@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+
+.page-section {
+    padding: 6rem 0;
+}
+.bg-light {
+    background-color: #709fb0 !important;
+}
+
+.container h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    text-align: center;
+}
+.container h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+}
+
+
+.col-lg-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+}
+.col-lg-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+}
+
+.col-lg-4, .col-lg-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+
+
+
+
+h4, .h4 {
+    font-size: 1.5rem;
+}
+h2, .h2 {
+    font-size: 2rem;
+}
+
+h3, .h3 {
+    font-size: 1.75rem;
+}
+
+p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2,
+h3 {
+    page-break-after: avoid;
+}
+
+.team-member {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.team-member img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team-member h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+tr,
+img {
+    page-break-inside: avoid;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.mx-auto {
+    margin-right: auto !important;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.text-muted {
+    color: #f8f1f1 !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.text-center {
+    text-align: center !important;
+}
+
+section#contact .section-heading {
+    color: #fff;
+}

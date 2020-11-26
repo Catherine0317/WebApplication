@@ -5,10 +5,14 @@
     <meta charset="utf-8">
     <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
     <!-- <title>Responsive Contact us Form | CodingNepal</title> -->
-    <link rel="stylesheet" href="static/css/contact-page.css"
+    <link rel="stylesheet" href="./static/css/contact-page.css">
+    <link rel="stylesheet" href="./static/css/styles.css"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<?php
+include "header.php";
+?>
 <div class="container">
     <div class="text">
          Contact Us </div>
@@ -114,7 +118,6 @@
                 </div>
     </form>
 </div>
-
 </body>
 </html>
 

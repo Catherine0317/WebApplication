@@ -7,7 +7,7 @@
     margin:auto;
 }
 header{
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("./IMG/background4.jpg");
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../images/background4.jpg");
     height:100vh;
     -webkit-background-size:cover;
     background-size:cover;
